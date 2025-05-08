@@ -1,0 +1,41 @@
+@use "@/styles/mixins" as *; // optional
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  &.default {
+    background: var(--accent);
+    color: var(--text-dark);
+    text-transform: uppercase;
+    border-color: var(--accent);
+
+    &:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+    }
+  }
+
+  &.outline {
+    background: transparent;
+    color: var(--accent);
+    border-color: var(--accent);
+
+    &:hover {
+      background: var(--accent-hover);
+      color: var(--bg);
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

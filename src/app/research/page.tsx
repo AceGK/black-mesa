@@ -3,6 +3,7 @@ import { useState } from "react";
 import posts from "@/lib/posts.json";
 import Header from "@/components/Header";
 import Card from "@/components/Post/Card";
+import Button from "@/components/Button"; // ✅ import your generic button
 import styles from "./styles.module.scss";
 
 export default function ResearchPage() {
@@ -30,9 +31,9 @@ export default function ResearchPage() {
 
           {hasMore && (
             <div className={styles.loadMoreWrapper}>
-              <button onClick={() => setVisibleCount((prev) => prev + 3)}>
+              <Button onClick={() => setVisibleCount((prev) => prev + 3)}>
                 View More
-              </button>
+              </Button>
             </div>
           )}
         </section>

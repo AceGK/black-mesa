@@ -7,7 +7,8 @@ export default function About() {
     <main>
       <Header title="about" backgroundImage="/images/1.jpg" />
       <div className="container">
-      <section className="grid">
+        
+      {/* <section className="grid">
       <Blurb
         title="Anomalous Materials Division"
         description="Specializing in the analysis of exotic compounds recovered from dimensional breaches and deep-core excavations. The division is responsible for Phase Displacement experimentation and pioneered the Resonance Cascade Energy Threshold model. "
@@ -29,7 +30,7 @@ export default function About() {
         href="/about"
         imageSrc="/images/black-mesa.jpg"
       />
-      </section>
+      </section> */}
       </div>
     </main>
   );

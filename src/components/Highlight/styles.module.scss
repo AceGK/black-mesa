@@ -38,10 +38,12 @@
   flex: 1 1 0;
   aspect-ratio: 16 / 9;
   min-height: 100%;
+  order: 2;
 
   @include respond-md {
     width: 100%;
     min-height: 200px;
+    order: 1;
   }
 }
 
@@ -58,6 +60,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  order: 1;
+
+  @include respond-md {
+    order: 2; 
+  }
 
   h2 {
     font-size: 1.5rem;

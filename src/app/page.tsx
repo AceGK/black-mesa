@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
 import posts from "@/lib/posts.json";
 import Card from "@/components/Post/Card";
+import Link from "next/link";
 
 export default function Home() {
   const visiblePosts = posts.slice(0, 3);
@@ -23,7 +24,7 @@ export default function Home() {
         <section className={styles.highlight}>
           <Highlight
             imageSrc="/images/black-mesa.jpg"
-            title="About Black Mesa"
+            title=""
             linkText="Learn More"
             href="/about"
           >
@@ -54,6 +55,9 @@ export default function Home() {
               />
             ))}
           </div>
+          {/* <Link href="/research" className={styles.viewMore}>
+            View More
+          </Link> */}
         </section>
       </div>
     </main>
