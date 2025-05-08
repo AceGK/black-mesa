@@ -35,6 +35,10 @@
   text-transform: uppercase;
   mix-blend-mode: difference;
 
+  @include respond-md {
+    top:18vh;
+  }
+
   h1 {
     color: white;
     font-size: clamp(2.125rem, 8vw, 6rem);

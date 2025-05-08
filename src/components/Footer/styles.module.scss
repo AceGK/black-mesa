@@ -1,3 +1,5 @@
+@use "@/styles/mixins" as *;
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -7,7 +9,13 @@
   background: var(--bg);
   color: var(--text2);
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+
+  @include respond-md {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .column {
@@ -19,24 +27,45 @@
   a {
     text-decoration: none;
     color: var(--text2);
-    // transition: color 0.2s ease;
     text-transform: uppercase;
+    width: fit-content;
   }
 
   &:last-of-type {
     justify-content: flex-end;
   }
+
+  @include respond-md {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    
+    &:first-of-type {
+      order: 1;
+    }
+
+    &:last-of-type {
+      order: 2;
+    }
+  }
 }
 
 .logo {
-  color:var(--text);
+  color: var(--text);
   width: 50px;
   height: 50px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+
   &:hover {
     color: var(--accent);
+  }
+
+  @include respond-md {
+    order: 3; 
+    margin-top: 1rem;
   }
 }
