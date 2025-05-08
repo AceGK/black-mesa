@@ -1,4 +1,3 @@
-// app/news/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import posts from "@/lib/posts.json";
 import Page from "@/components/Post/Page";

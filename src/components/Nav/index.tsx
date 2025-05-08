@@ -8,12 +8,14 @@ import LogoFull from "@/assets/logos/black-mesa-logo.svg";
 import LogoIcon from "@/assets/logos/black-mesa-icon.svg";
 import ThemeToggle from "@/components/ThemeToggle";
 import MenuIcon from "@/assets/icons/hamburger-right.svg";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollUp, setScrollUp] = useState(true);
   const [scrolledPastThreshold, setScrolledPastThreshold] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,10 +31,18 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  const links = [
+    { href: "/about", label: "About" },
+    { href: "/research", label: "Research" },
+    { href: "/careers", label: "Careers" },
+  ];
+
   return (
     <>
       <header
-        className={`${styles.nav} ${scrolledPastThreshold ? styles.solid : styles.transparent} ${scrollUp ? styles.show : styles.hide}`}
+        className={`${styles.nav} ${
+          scrolledPastThreshold ? styles.solid : styles.transparent
+        } ${scrollUp ? styles.show : styles.hide}`}
       >
         <div className={styles.logo}>
           <Link href="/" className={styles.logoIcon}>
@@ -44,10 +54,20 @@ export default function Nav() {
         </div>
         <nav>
           <div className={styles.links}>
-            <Link href="/about" className="underline-animate fast">About</Link>
-            <Link href="/research" className="underline-animate fast">Research</Link>
-            <Link href="/careers" className="underline-animate fast">Careers</Link>
-            <Link href="/contact" className={styles.button}>Contact</Link>
+            {links.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className={`underline-animate fast ${
+                  pathname === href ? "active" : ""
+                }`}
+              >
+                {label}
+              </Link>
+            ))}
+            <Link href="/contact" className={styles.button}>
+              Contact
+            </Link>
             <ThemeToggle />
           </div>
           <button

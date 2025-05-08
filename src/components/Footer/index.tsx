@@ -8,19 +8,18 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.column}>
-        <Link href="/about">About</Link>
-        <Link href="/careers">Careers</Link>
-        <Link href="/news">News</Link>
+        <Link href="/about" className="underline-animate fast">About</Link>
+        <Link href="/research" className="underline-animate fast">Research</Link>
+        <Link href="/careers" className="underline-animate fast">Careers</Link>
       </div>
 
-      <div className={styles.logo}>
+      <Link href="/" className={styles.logo}>
        <Logo />
-      </div>
+      </Link>
 
       <div className={styles.column}>
-        <Link href="/contact">Contact</Link>
-        <Link href="/privacy">Privacy</Link>
-        <Link href="/terms">Terms</Link>
+        <Link href="/contact" className="underline-animate fast">Contact</Link>
+        <Link href="/site-information" className="underline-animate fast">Site Information</Link>
       </div>
     </footer>
   );

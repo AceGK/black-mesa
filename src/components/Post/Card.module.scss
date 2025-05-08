@@ -7,6 +7,16 @@
   overflow: hidden;
   color: var(--text2);
   height: 100%;
+  text-decoration: none;
+
+  // &:hover {
+  //   border-color:var(--text);
+  // }
+
+  &:hover :global(.underline-animate.thin) {
+    background-size: 100% 1px;
+    color:var(--accent);
+  }
 }
 
 .imageWrapper {
