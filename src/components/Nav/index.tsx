@@ -44,9 +44,9 @@ export default function Nav() {
         </div>
         <nav>
           <div className={styles.links}>
-            <Link href="/about">About</Link>
-            <Link href="/research">Research</Link>
-            <Link href="/careers">Careers</Link>
+            <Link href="/about" className="underline-animate">About</Link>
+            <Link href="/research" className="underline-animate">Research</Link>
+            <Link href="/careers" className="underline-animate">Careers</Link>
             <Link href="/contact" className={styles.button}>Contact</Link>
             <ThemeToggle />
           </div>

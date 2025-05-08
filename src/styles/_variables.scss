@@ -4,7 +4,7 @@ $accent-hover: #ce9312;
 $bg-light: #ffffff;
 $bg-dark: #161616;
 $text-light: #161616;
-$text-dark: #ffffff;
+$text-dark: #efebe3;
 
 // Global CSS variables
 :root {
@@ -22,7 +22,7 @@ $text-dark: #ffffff;
   --text: #{$text-dark};
   --text-dark:#{$text-light};
   --text-light:#{$text-dark};
-  --text-secondary: #ccc;
+  --text-secondary: rgb(158, 158, 158);
   --accent: #{$accent};
   --accent-hover: #{$accent-hover};
 }

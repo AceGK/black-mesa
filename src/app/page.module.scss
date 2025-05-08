@@ -1,6 +1,13 @@
 .main {
   height:200vh;
   section {
-    padding:2rem 0rem;
+    padding:4rem 0px;
+    h2 {
+      font-size:3rem;
+      line-height: normal;
+    }
+    p {
+      color:var(--text-secondary);
+    }
   }
 }
