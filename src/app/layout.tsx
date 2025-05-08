@@ -15,24 +15,24 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   title: "Black Mesa",
-  description: "Welcome to the Black Mesa Research Facility. Science has never been so dangerous.",
+  description: "Pursuing radical advancement in quantum mechanics, dimensional field research, and defense-grade applied sciences.",
   applicationName: "Black Mesa",
   keywords: ["Black Mesa", "Research", "Half-Life", "Science", "Gordon Freeman"],
-  authors: [{ name: "Black Mesa", url: "https://blackmesa.example.com" }],
-  creator: "Black Mesa Development Team",
-  publisher: "Black Mesa",
-  metadataBase: new URL("https://blackmesa.example.com"),
+  authors: [{ name: "Black Mesa", url: "https://blackmesa.acekisch.com" }],
+  creator: "Ace Kisch",
+  publisher: "Ace Kisch",
+  metadataBase: new URL("https://blackmesa.acekisch.com"),
 
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://blackmesa.example.com",
+    url: "https://blackmesa.acekisch.com",
     title: "Black Mesa Research Facility",
-    description: "Top secret research into teleportation, Xen, and theoretical physics.",
+    description: "Pursuing radical advancement in quantum mechanics, dimensional field research, and defense-grade applied sciences.",
     siteName: "Black Mesa",
     images: [
       {
-        url: "/og-image.jpg", // or full URL if hosted elsewhere
+        url: "/thumbnail.jpg",
         width: 1200,
         height: 630,
         alt: "Black Mesa Research Facility",
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Black Mesa Research Facility",
-    description: "The frontier of science... and danger.",
+    description: "Pursuing radical advancement in quantum mechanics, dimensional field research, and defense-grade applied sciences.",
     creator: "@blackmesaofficial",
-    images: ["/og-image.jpg"],
+    images: ["/thumbnail.jpg"],
   },
 
   icons: {
