@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
 import posts from "@/lib/posts.json";
 import Card from "@/components/Post/Card";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Home() {
   const visiblePosts = posts.slice(0, 3);

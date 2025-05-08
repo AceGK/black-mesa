@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import Blurb from "@/components/Blurb";
+// import Blurb from "@/components/Blurb";
 
 export default function About() {
 
@@ -7,7 +7,7 @@ export default function About() {
     <main>
       <Header title="about" backgroundImage="/images/1.jpg" />
       <div className="container">
-        
+
       {/* <section className="grid">
       <Blurb
         title="Anomalous Materials Division"
