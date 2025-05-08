@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 import styles from "./page.module.scss";
 import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
@@ -7,8 +5,7 @@ import posts from "@/lib/posts.json";
 import Card from "@/components/Post/Card";
 
 export default function Home() {
-  const [visibleCount, setVisibleCount] = useState(3);
-  const visiblePosts = posts.slice(0, visibleCount);
+  const visiblePosts = posts.slice(0, 3);
 
   return (
     <main className={styles.main}>
