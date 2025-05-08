@@ -4,7 +4,6 @@ import posts from "@/lib/posts.json";
 import Header from "@/components/Header";
 import Card from "@/components/Post/Card";
 import styles from "./styles.module.scss";
-import Blurb from "@/components/Blurb";
 
 export default function ResearchPage() {
   const INITIAL_COUNT = 3;

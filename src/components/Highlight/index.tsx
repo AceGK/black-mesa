@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.scss";
-import Logo from "@/assets/logos/black-mesa-icon.svg";
 
 interface HighlightProps {
   imageSrc: string;

@@ -1,10 +1,8 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
 import styles from "./page.module.scss";
 import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
-import Blurb from "@/components/Blurb";
 import posts from "@/lib/posts.json";
 import Card from "@/components/Post/Card";
 
