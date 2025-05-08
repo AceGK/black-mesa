@@ -48,19 +48,6 @@ export const metadata: Metadata = {
     images: ["/thumbnail.jpg"],
   },
 
-  icons: {
-    icon: [
-      { url: "/favicon-light.svg", media: "(prefers-color-scheme: light)" },
-      { url: "/favicon-dark.svg", media: "(prefers-color-scheme: dark)" },
-    ],
-    apple: "/apple-touch-icon.png",
-  },
-
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0d0d0d" },
-  ],
-
   manifest: "/site.webmanifest",
 };
 

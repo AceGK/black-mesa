@@ -5,10 +5,12 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.overlay} />
       <div className={styles.gradientFade} />
-      <div className={styles.content}>
-        <h1>Black Mesa</h1>
-        <p>Research Facility</p>
-      </div>
+      {/* <div className={styles.mask}> */}
+        <div className={styles.content}>
+          <h1>Black Mesa</h1>
+          <p>Research Facility</p>
+        </div>
+      {/* </div> */}
     </section>
   );
 }

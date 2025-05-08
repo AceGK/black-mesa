@@ -14,24 +14,26 @@ const Page: React.FC<PageProps> = ({ title, date, content, image }) => {
     <main className={styles.container}>
       <article className={styles.post}>
         <div className={styles.image}>
-        <Image 
-          src={image}
-          alt={title}
-          fill
-          priority
-          quality={100}
-          className={styles.image}
-        />
+          <Image
+            src={image}
+            alt={title}
+            fill
+            priority
+            quality={100}
+            className={styles.image}
+          />
         </div>
         <h1>{title}</h1>
         <p className={styles.date}>
           <em>{date}</em>
         </p>
         <div className={styles.content}>
-          <p>{content}</p>
+          {content.split("\n\n").map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
       </article>
-      </main>
+    </main>
   );
 };
 

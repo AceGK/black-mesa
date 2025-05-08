@@ -7,11 +7,18 @@
     text-align:center;
     gap:2rem;
     padding:0px 0px;
-    top:-50px;
+    top:-175px;
     position:relative;
+    z-index: 2;
     h2 {
       font-size:clamp(1.5rem, 8vw, 4rem);
-      line-height: normal;
+      line-height: normal; 
     }
+    p {
+      text-wrap:balance;
+    }
+  }
+  .highlight {
+    padding:0px 0px!important;
   }
 }

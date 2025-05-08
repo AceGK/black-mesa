@@ -1,27 +1,11 @@
 [
   {
     "slug": "xen-borderworld-probe-recovery",
-    "title": "Xen Borderworld Probe Recovery Yields Unexpected Results",
+    "title": "Xen Probe Recovery Yields Unexpected Results",
     "date": "2000-04-02",
-    "image": "/images/1.jpg",
+    "image": "/images/6.jpg",
     "excerpt": "A recent sweep of the Xen borderworld recovered multiple autonomous probes containing viable biogenic compounds.",
-    "content": "The Research Division at Black Mesa is pleased to report the successful retrieval of three autonomous sensor probes deployed during last quarter’s dimensional incursion survey. While initial objectives focused on atmospheric data sampling, the probes returned with organic residue samples of a previously undocumented molecular configuration.\n\nPreliminary analysis by Sector D’s biogenetics team confirms self-replicating protein chains that appear to exhibit quantum-state variability—a potential breakthrough in adaptive biomaterials. Further research will determine whether these organisms evolved within Xen or originated from an adjacent dimension.\n\nBlack Mesa reaffirms its commitment to exploring interdimensional frontiers for the advancement of defense, science, and humanity."
-  },
-  {
-    "slug": "resonance-cascade-prevention-modeling",
-    "title": "Advances in Resonance Cascade Prevention Modeling",
-    "date": "2000-03-18",
-    "image": "/images/1.jpg",
-    "excerpt": "New containment simulation tools dramatically improve cascade failure prediction in high-energy tests.",
-    "content": "Black Mesa’s Theoretical Materials Division has unveiled a suite of predictive algorithms designed to anticipate resonance cascade events during high-energy spectrum manipulation. These models, built on post-incident reconstruction data, now allow researchers to simulate cascade thresholds in real time across multiple test chambers.\n\nThe updated framework integrates exotic matter instability parameters, improved crystal lattice phase-matching, and neural telemetry from prior test subjects. Applied in conjunction with revised interlock sequences, this advancement is projected to reduce anomalous discharge risk by over 78%.\n\nAs always, Black Mesa urges strict adherence to all Level 3 hazard protocols when operating within proximity of anomalous materials."
-  },
-  {
-    "slug": "lambda-lab-telemetry-array-upgrade",
-    "title": "Lambda Lab Telemetry Arrays Receive Critical Upgrade",
-    "date": "2000-02-29",
-    "image": "/images/1.jpg",
-    "excerpt": "Improved telemetry systems are now operational across all upper-tier Lambda Core containment zones.",
-    "content": "As part of ongoing containment optimization efforts, the Lambda Complex has completed installation of next-generation quantum telemetry arrays. The upgrade—funded under Project STELLARWAVE—enables real-time feedback synchronization across dimensional anchor points, significantly reducing lag during transit window testing.\n\nLead researchers note improved signal integrity when mapping Xen field fluctuations, as well as reduced drift during zero-point energy extractions. These advances are expected to benefit both teleportation reliability and overall facility containment security.\n\nPersonnel are reminded that unauthorized access to interdimensional gateways remains strictly prohibited under Black Mesa Regulation 112-G."
+    "content": "In a promising development from the Interdimensional Survey Initiative, three long-range autonomous telemetry probes—designated XR-7 through XR-9—were successfully recovered from the outer strata of the Xen borderworld during a routine incursion perimeter reassessment. Originally tasked with collecting broad-spectrum atmospheric and geotectonic metrics, the probes returned bearing trace biogenic particulates of a highly anomalous composition.\n\nInitial assays performed by Biogenetics Subdivision Theta suggest the recovered residues exhibit molecular irregularities consistent with self-ordering protein assemblies, showing recursive structuration behavior under low-stimulation conditions. Notably, several observed chain formations demonstrate state-dependence on ambient quantum interference fields, indicating possible cross-dimensional symbiosis or adaptive drift.\n\nWhether these biomimetic compounds are native to Xen or represent cross-permeable matter from co-located dimensions remains an open question. However, their replicative plasticity and non-classical folding pathways suggest novel applications in dynamic material synthesis and long-range bio-inert encapsulation.\n\nThe findings reaffirm Black Mesa’s strategic imperative to expand cross-dimensional telemetry protocols and elevate frontier biosciences in alignment with national defense and theoretical advancement initiatives."
   },
   {
     "slug": "anomalous-materials-phase-iv-testing",
@@ -29,6 +13,22 @@
     "date": "2000-03-04",
     "image": "/images/1.jpg",
     "excerpt": "With stabilized anti-mass spectrometer output, Phase IV begins under revised containment guidelines.",
-    "content": "The Anomalous Materials Division has officially entered Phase IV of its experimental materials testing program. Following recalibration of the anti-mass spectrometer and upgrades to Sector C's interlock isolation system, researchers have resumed limited Class-A spectrum exposure trials.\n\nPhase IV will focus on refining harmonic phase alignment between unstable crystalline samples and known resonance harmonics. Additional support from Theoretical Physics has allowed cross-verification of decay rates and energy bleed patterns with previous Sector G data.\n\nPersonnel assigned to Phase IV are reminded that secondary shielding protocols are now mandatory during all experiment initialization windows. Briefing packets are available through secure intranet access."
+    "content": "Following a comprehensive systems re-integration effort, the Anomalous Materials Division has formally commenced Phase IV operations within the Class-A test corridor. Enabled by recent harmonics stabilization in the Sector C anti-mass spectrometer array, and bolstered by reinforced interlock lattice retrofits, the division now resumes constrained experimentation under the revised Containment Advisory Protocol (CAP-47).\n\nPhase IV focuses on the refinement of crystalline-resonance coupling through synchronized harmonic injection, with an emphasis on modulating stochastic decay intervals and attenuating spectral divergence within oscillatory matter states. Experimental matrices now include previously off-limits Type-D crystal samples under close spectrometric observation.\n\nCross-disciplinary insights from Theoretical Physics have accelerated real-time frequency modeling, enabling near-instantaneous feedback on subatomic shear thresholds and phase bleed convergence. In conjunction, all operatives must observe newly enforced spatial dampening zones during procedural ramp-up phases.\n\nPersonnel are required to consult the CAP-47 Phase IV operational dossier prior to chamber entry. Access is restricted to those with appropriate containment tier clearance."
+  },
+  {
+    "slug": "resonance-cascade-prevention-modeling",
+    "title": "Advances in Resonance Cascade Prevention Modeling",
+    "date": "2000-03-18",
+    "image": "/images/5.jpg",
+    "excerpt": "New containment simulation tools dramatically improve cascade failure prediction in high-energy tests.",
+    "content": "The Theoretical Materials Division has released a predictive framework upgrade for modeling cascade-prone interactions in high-energy material exposures. Drawing from retrospective telemetry and post-incident kinetic reconstructions, the model integrates a dynamic simulation suite capable of resolving temporal-causal anomalies within live test environments.\n\nThe new algorithms incorporate neural-extracted telemetry from classified test cycles, integrating biometric deviation tracking into exotic matter collapse probability forecasting. Lattice-phase mismatch variables, once considered statistically negligible, have now been weighted more significantly within the model to account for observed variances during energy bleed-off cycles.\n\nReal-time monitoring now includes the adaptive re-synchronization of interlock arrays based on fluctuating energy deltas, permitting proactive mitigation of pre-cascade harmonic resonance escalation. Initial simulations suggest a 78.4% decrease in cascade chain propagation risk when models are executed within revised control environments.\n\nBlack Mesa continues to prioritize systemic redundancy and failsafe integrity within all active resonance experimentation sectors. Personnel operating within Class-B hazard zones are instructed to remain current with latest Predictive Risk Index (PRI) bulletins and adhere to updated proximity avoidance measures."
+  },
+  {
+    "slug": "lambda-lab-telemetry-array-upgrade",
+    "title": "Lambda Lab Telemetry Arrays Receive Critical Upgrade",
+    "date": "2000-02-29",
+    "image": "/images/7.jpg",
+    "excerpt": "Improved telemetry systems are now operational across all upper-tier Lambda Core containment zones.",
+    "content": "Under directive from Project STELLARWAVE, the Lambda Complex has completed a full-spectrum upgrade of its upper-tier quantum telemetry architecture. The deployment of the Gen-4 synchronization array—now active across all primary containment strata—represents a critical leap in real-time interdimensional coordination fidelity.\n\nThese newly integrated systems facilitate high-bandwidth feedback loops across multi-vector anchor points, enabling more precise transit alignment calibration and significantly reducing spectral latency during dimensional transition staging. Test personnel have reported marked improvements in field stability metrics and zero-point energy diffusion control, particularly during high-delta Xen fluctuation events.\n\nThe new arrays also incorporate adaptive signal interpolation modules, allowing predictive realignment of telemetry focus fields based on field state variance—a breakthrough particularly valuable in tracking border instability spikes across non-static gateway zones.\n\nAll staff are reminded that Regulation 112-G remains in effect and that transit array access is strictly limited to personnel with both Theta-Clearance and field synchronization credentials. Unscheduled portal interactions will result in immediate containment lockdown and disciplinary review."
   }
 ]

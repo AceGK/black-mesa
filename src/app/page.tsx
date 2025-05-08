@@ -8,18 +8,19 @@ export default function Home() {
   const visiblePosts = posts.slice(0, 3);
 
   return (
+    <>
+          <Hero />
     <main className={styles.main}>
-      <Hero />
       <div className="container">
         <section className={styles.intro}>
-          <h2>Where Boundaries Are Theories, and Discovery Is Policy.</h2>
+          <h2>Working to make a better tomorrow for all mankind.</h2>
           <p>
             Pursuing radical advancement in quantum mechanics, dimensional field
             research, and defense-grade applied sciences. Our mission: redefine
             the possible — and contain the consequences.
           </p>
         </section>
-        <section>
+        <section className={styles.highlight}>
           <Highlight
             imageSrc="/images/black-mesa.jpg"
             title="About Black Mesa"
@@ -56,5 +57,6 @@ export default function Home() {
         </section>
       </div>
     </main>
+    </>
   );
 }
