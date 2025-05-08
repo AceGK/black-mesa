@@ -12,7 +12,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ slug, title, excerpt, image }) => {
   return (
     <div className={styles.card}>
-      <Link href={`/news/${slug}`} className={styles.imageWrapper}>
+      <Link href={`/research/${slug}`} className={styles.imageWrapper}>
         <Image
           src={image}
           alt={title}
@@ -23,11 +23,11 @@ const Card: React.FC<CardProps> = ({ slug, title, excerpt, image }) => {
       </Link>
       <div className={styles.content}>
         <h2>
-          <Link href={`/news/${slug}`}>{title}</Link>
+          <Link href={`/research/${slug}`} className="underline-animate thin">{title}</Link>
         </h2>
         <p>{excerpt}</p>
       </div>
-      {/* <Link href={`/news/${slug}`} className={styles.button}>
+      {/* <Link href={`/research/${slug}`} className={styles.button}>
         View Article
       </Link> */}
     </div>

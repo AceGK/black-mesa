@@ -15,24 +15,34 @@ body {
 }
 
 .underline-animate {
-  position: relative;
-  display: inline-block;
   text-decoration: none;
   color: inherit;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 1s ease;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    height: 2px;
-    width: 0;
-    background-color: var(--accent);
-    transition: width 0.3s ease;
+  &:hover,
+  &:focus-visible {
+    background-size: 100% 2px;
   }
 
-  &:hover::after,
-  &:focus-visible::after {
-    width: 100%;
+  &.thin {
+    background-size: 0% 1px;
+
+    &:hover,
+    &:focus-visible {
+      background-size: 100% 1px;
+    }
+  }
+
+  &.fast {
+    transition: background-size 0.25s ease;
+
+    &:hover,
+    &:focus-visible {
+      transition: background-size 0.25s ease;
+    }
   }
 }
