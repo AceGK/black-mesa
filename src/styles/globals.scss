@@ -1,0 +1,9 @@
+@use "@/styles/variables.scss";
+@use "styles/mixins" as *;
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+}
