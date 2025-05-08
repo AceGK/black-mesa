@@ -2,8 +2,8 @@
 $accent: #f4b327;
 $accent-hover: #ce9312;
 $bg-light: #ffffff;
-$bg-dark: #161616;
-$text-light: #161616;
+$bg-dark: #141414;
+$text-light: #141414;
 $text-dark: #efebe3;
 
 // Global CSS variables
@@ -15,6 +15,7 @@ $text-dark: #efebe3;
   --text-secondary: #444;
   --accent: #{$accent};
   --accent-hover: #{$accent-hover};
+  --border:1px solid rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] {
@@ -25,4 +26,5 @@ $text-dark: #efebe3;
   --text-secondary: rgb(158, 158, 158);
   --accent: #{$accent};
   --accent-hover: #{$accent-hover};
+  --border:1px solid rgba(255, 255, 255, 0.1);
 }

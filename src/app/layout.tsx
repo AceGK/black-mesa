@@ -4,6 +4,7 @@ import "@/styles/reset.scss";
 import "@/styles/globals.scss";
 import Nav from "@/components/Nav";
 import { ThemeProvider } from "next-themes";
+import Footer from "@/components/Footer";
 
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
@@ -26,8 +27,9 @@ export default function RootLayout({
     <html lang="en" className={sourceSans.variable} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="data-theme">
-          <Nav/>
+          <Nav />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
