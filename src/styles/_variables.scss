@@ -1,15 +1,17 @@
 // SCSS variables (for reuse in other SCSS files)
-$accent: #ff6600;
-$accent-hover: #ffa94d;
+$accent: #f4b327;
+$accent-hover: #ce9312;
 $bg-light: #ffffff;
-$bg-dark: #111111;
-$text-light: #111111;
+$bg-dark: #161616;
+$text-light: #161616;
 $text-dark: #ffffff;
 
 // Global CSS variables
 :root {
   --bg: #{$bg-light};
   --text: #{$text-light};
+  --text-dark:#{$text-light};
+  --text-light:#{$text-dark};
   --text-secondary: #444;
   --accent: #{$accent};
   --accent-hover: #{$accent-hover};
@@ -18,6 +20,8 @@ $text-dark: #ffffff;
 [data-theme="dark"] {
   --bg: #{$bg-dark};
   --text: #{$text-dark};
+  --text-dark:#{$text-light};
+  --text-light:#{$text-dark};
   --text-secondary: #ccc;
   --accent: #{$accent};
   --accent-hover: #{$accent-hover};

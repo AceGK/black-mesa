@@ -1,22 +1,30 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
+import Hero from "@/components/Hero";
+import Blurb from "@/components/Blurb";
 
 export default function Home() {
   return (
-  <main className={styles.main}>
-    {/* <div className={styles.center}>
-      <Image
-        src="/images/logo.svg"
-        alt="Black Mesa Logo"
-        width={300}
-        height={300}
-        priority
-      />
-    </div>
-    <h1 className={styles.title}>Welcome to Black Mesa</h1>
-    <p className={styles.description}>
-      This is a research facility for the study of anomalous materials.
-    </p> */}
-  </main>
-  )
+    <main className={styles.main}>
+      <Hero />
+      <section className="container">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <div>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          quae, voluptates veniam quaerat aspernatur est magni mollitia fugiat!
+          Corrupti tempore accusamus odit unde voluptate, similique eveniet
+          ipsam commodi excepturi libero.
+        </div>
+      </section>
+      <section className="container">
+        <Blurb
+          imageSrc="/images/black-mesa.jpg"
+          title="Our Research"
+          description="Explore how Black Mesa is pushing the boundaries of science and unlocking new dimensions."
+          linkText="Learn More"
+          href="/research"
+        />
+      </section>
+    </main>
+  );
 }

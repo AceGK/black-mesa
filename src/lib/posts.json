@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "xen-borderworld-probe-recovery",
+    "title": "Xen Borderworld Probe Recovery Yields Unexpected Results",
+    "date": "2000-04-02",
+    "image": "/images/1.jpg",
+    "excerpt": "A recent sweep of the Xen borderworld recovered multiple autonomous probes containing viable biogenic compounds.",
+    "content": "The Research Division at Black Mesa is pleased to report the successful retrieval of three autonomous sensor probes deployed during last quarter’s dimensional incursion survey. While initial objectives focused on atmospheric data sampling, the probes returned with organic residue samples of a previously undocumented molecular configuration.\n\nPreliminary analysis by Sector D’s biogenetics team confirms self-replicating protein chains that appear to exhibit quantum-state variability—a potential breakthrough in adaptive biomaterials. Further research will determine whether these organisms evolved within Xen or originated from an adjacent dimension.\n\nBlack Mesa reaffirms its commitment to exploring interdimensional frontiers for the advancement of defense, science, and humanity."
+  },
+  {
+    "slug": "resonance-cascade-prevention-modeling",
+    "title": "Advances in Resonance Cascade Prevention Modeling",
+    "date": "2000-03-18",
+    "image": "/images/1.jpg",
+    "excerpt": "New containment simulation tools dramatically improve cascade failure prediction in high-energy tests.",
+    "content": "Black Mesa’s Theoretical Materials Division has unveiled a suite of predictive algorithms designed to anticipate resonance cascade events during high-energy spectrum manipulation. These models, built on post-incident reconstruction data, now allow researchers to simulate cascade thresholds in real time across multiple test chambers.\n\nThe updated framework integrates exotic matter instability parameters, improved crystal lattice phase-matching, and neural telemetry from prior test subjects. Applied in conjunction with revised interlock sequences, this advancement is projected to reduce anomalous discharge risk by over 78%.\n\nAs always, Black Mesa urges strict adherence to all Level 3 hazard protocols when operating within proximity of anomalous materials."
+  },
+  {
+    "slug": "lambda-lab-telemetry-array-upgrade",
+    "title": "Lambda Lab Telemetry Arrays Receive Critical Upgrade",
+    "date": "2000-02-29",
+    "image": "/images/1.jpg",
+    "excerpt": "Improved telemetry systems are now operational across all upper-tier Lambda Core containment zones.",
+    "content": "As part of ongoing containment optimization efforts, the Lambda Complex has completed installation of next-generation quantum telemetry arrays. The upgrade—funded under Project STELLARWAVE—enables real-time feedback synchronization across dimensional anchor points, significantly reducing lag during transit window testing.\n\nLead researchers note improved signal integrity when mapping Xen field fluctuations, as well as reduced drift during zero-point energy extractions. These advances are expected to benefit both teleportation reliability and overall facility containment security.\n\nPersonnel are reminded that unauthorized access to interdimensional gateways remains strictly prohibited under Black Mesa Regulation 112-G."
+  },
+  {
+    "slug": "anomalous-materials-phase-iv-testing",
+    "title": "Anomalous Materials Division Enters Phase IV of Testing Cycle",
+    "date": "2000-03-04",
+    "image": "/images/1.jpg",
+    "excerpt": "With stabilized anti-mass spectrometer output, Phase IV begins under revised containment guidelines.",
+    "content": "The Anomalous Materials Division has officially entered Phase IV of its experimental materials testing program. Following recalibration of the anti-mass spectrometer and upgrades to Sector C's interlock isolation system, researchers have resumed limited Class-A spectrum exposure trials.\n\nPhase IV will focus on refining harmonic phase alignment between unstable crystalline samples and known resonance harmonics. Additional support from Theoretical Physics has allowed cross-verification of decay rates and energy bleed patterns with previous Sector G data.\n\nPersonnel assigned to Phase IV are reminded that secondary shielding protocols are now mandatory during all experiment initialization windows. Briefing packets are available through secure intranet access."
+  }
+]

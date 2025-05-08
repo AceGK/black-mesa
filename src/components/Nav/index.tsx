@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import MobileMenu from "../MobileMenu";
@@ -12,12 +12,16 @@ import MenuIcon from "@/assets/icons/hamburger-right.svg";
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollUp, setScrollUp] = useState(true);
+  const [scrolledPastThreshold, setScrolledPastThreshold] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      setScrollUp(currentScrollY < lastScrollY || currentScrollY < 50);
+      const threshold = window.innerHeight * 0.25;
+
+      setScrollUp(currentScrollY < lastScrollY || currentScrollY < threshold);
+      setScrolledPastThreshold(currentScrollY > threshold);
       setLastScrollY(currentScrollY);
     };
 
@@ -27,8 +31,10 @@ export default function Nav() {
 
   return (
     <>
-      <header className={`${styles.nav} ${scrollUp ? styles.show : styles.hide}`}>
-      <div className={styles.logo}>
+      <header
+        className={`${styles.nav} ${scrolledPastThreshold ? styles.solid : styles.transparent} ${scrollUp ? styles.show : styles.hide}`}
+      >
+        <div className={styles.logo}>
           <Link href="/" className={styles.logoIcon}>
             <LogoIcon />
           </Link>
