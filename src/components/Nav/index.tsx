@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import MobileMenu from "../MobileMenu";
-import LogoFull from "@/assets/logos/black-mesa-logo.svg";
+import LogoFull from "@/assets/logos/black-mesa.svg";
 import LogoIcon from "@/assets/logos/black-mesa-icon.svg";
 import ThemeToggle from "@/components/ThemeToggle";
 import MenuIcon from "@/assets/icons/hamburger-right.svg";

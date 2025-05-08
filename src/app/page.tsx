@@ -3,9 +3,10 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./page.module.scss";
 import Hero from "@/components/Hero";
+import Highlight from "@/components/Highlight";
 import Blurb from "@/components/Blurb";
-import PostGrid from "@/components/Post/Grid";
 import posts from "@/lib/posts.json";
+import Card from "@/components/Post/Card";
 
 export default function Home() {
   const [visibleCount, setVisibleCount] = useState(3);
@@ -16,26 +17,47 @@ export default function Home() {
       <Hero />
       <div className="container">
         <section className={styles.intro}>
-          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+          <h2>Where Boundaries Are Theories, and Discovery Is Policy.</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur quae, voluptates veniam quaerat aspernatur est magni
-            mollitia fugiat! Corrupti tempore accusamus odit unde voluptate,
-            similique eveniet ipsam commodi excepturi libero.
+            Pursuing radical advancement in quantum mechanics, dimensional field
+            research, and defense-grade applied sciences. Our mission: redefine
+            the possible — and contain the consequences.
           </p>
         </section>
         <section>
-          <Blurb
+          <Highlight
             imageSrc="/images/black-mesa.jpg"
             title="About Black Mesa"
-            description="Explore how Black Mesa is pushing the boundaries of science and unlocking new dimensions."
             linkText="Learn More"
             href="/about"
-          />
+          >
+            <p>
+              At Black Mesa, we do not ask “why,” but “why not.” Our scientists
+              operate on the edge of known physics — and step over that edge
+              daily. Through partnerships with government agencies and defense
+              contractors, we maintain absolute operational security while
+              delivering results that transform civilization… or redefine it.
+            </p>
+            <p>
+              Explore how Black Mesa is unlocking new dimensions in
+              teleportation, dark energy extraction, and interspecies
+              observation.
+            </p>
+          </Highlight>
         </section>
         <section>
           <h2 className="minimal-title">Research</h2>
-          <PostGrid posts={visiblePosts} />
+          <div className="grid">
+            {visiblePosts.map((post) => (
+              <Card
+                key={post.slug}
+                slug={post.slug}
+                title={post.title}
+                excerpt={post.excerpt}
+                image={post.image}
+              />
+            ))}
+          </div>
         </section>
       </div>
     </main>

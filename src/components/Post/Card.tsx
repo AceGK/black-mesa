@@ -11,20 +11,18 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ slug, title, excerpt, image }) => {
   return (
-    <Link href={`/research/${slug}`} className={styles.card} passHref>
+    <Link href={`/research/${slug}`} className={styles.card}>
       <div className={styles.imageWrapper}>
         <Image
           src={image}
           alt={title}
-          width={400}
-          height={225}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className={styles.image}
         />
       </div>
       <div className={styles.content}>
-        <h2>
-          <Link href={`/research/${slug}`} className="underline-animate thin">{title}</Link>
-        </h2>
+        <h3><span className="underline-animate thin">{title}</span></h3>
         <p>{excerpt}</p>
       </div>
     </Link>

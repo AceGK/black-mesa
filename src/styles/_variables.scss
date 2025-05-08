@@ -5,6 +5,8 @@ $bg-light: #ffffff;
 $bg-dark: #141414;
 $text-light: #141414;
 $text-dark: #efebe3;
+$border-light: rgba(0, 0, 0, 0.1);
+$border-dark: rgba(255, 255, 255, 0.1);
 
 // Global CSS variables
 :root {
@@ -15,7 +17,7 @@ $text-dark: #efebe3;
   --text-secondary: #444;
   --accent: #{$accent};
   --accent-hover: #{$accent-hover};
-  --border:1px solid rgba(0, 0, 0, 0.1);
+  --border:#{$border-light};
 }
 
 [data-theme="dark"] {
@@ -26,5 +28,5 @@ $text-dark: #efebe3;
   --text-secondary: rgb(178, 178, 178);
   --accent: #{$accent};
   --accent-hover: #{$accent-hover};
-  --border:1px solid rgba(255, 255, 255, 0.1);
+  --border:#{$border-dark};
 }

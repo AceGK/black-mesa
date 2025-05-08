@@ -1,31 +1,43 @@
-'use client';
-
+"use client";
 import { useState } from "react";
-import Header from "@/components/Header";
-import PostGrid from "@/components/Post/Grid";
 import posts from "@/lib/posts.json";
+import Header from "@/components/Header";
+import Card from "@/components/Post/Card";
 import styles from "./styles.module.scss";
+import Blurb from "@/components/Blurb";
 
 export default function ResearchPage() {
-  const [visibleCount, setVisibleCount] = useState(3);
+  const INITIAL_COUNT = 3;
+  const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
   const visiblePosts = posts.slice(0, visibleCount);
   const hasMore = visibleCount < posts.length;
 
-  const loadMore = () => {
-    setVisibleCount((prev) => prev + 3);
-  };
-
   return (
-    <main className={styles.container}>
+    <main>
       <Header title="Research" backgroundImage="/images/1.jpg" />
-      <PostGrid posts={visiblePosts} />
-      {hasMore && (
-        <div className={styles.loadMoreWrapper}>
-          <button onClick={loadMore}>
-            View More
-          </button>
-        </div>
-      )}
+      <div className="container">
+        <section>
+          <div className="grid">
+            {visiblePosts.map((post) => (
+              <Card
+                key={post.slug}
+                slug={post.slug}
+                title={post.title}
+                excerpt={post.excerpt}
+                image={post.image}
+              />
+            ))}
+          </div>
+
+          {hasMore && (
+            <div className={styles.loadMoreWrapper}>
+              <button onClick={() => setVisibleCount((prev) => prev + 3)}>
+                View More
+              </button>
+            </div>
+          )}
+        </section>
+      </div>
     </main>
   );
 }
