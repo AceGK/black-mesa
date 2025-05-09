@@ -1,4 +1,4 @@
-import styles from "./page.module.scss";
+import styles from "@/styles/home.module.scss";
 import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
 import posts from "@/lib/posts.json";
@@ -10,57 +10,57 @@ export default function Home() {
 
   return (
     <>
-          <Hero />
-    <main className={styles.main}>
-      <div className="container">
-        <section className={styles.intro}>
-          <h2>Working to make a better tomorrow for all mankind.</h2>
-          <p>
-            Pursuing radical advancement in quantum mechanics, dimensional field
-            research, and defense-grade applied sciences. Our mission: redefine
-            the possible — and contain the consequences.
-          </p>
-        </section>
-        <section className={styles.highlight}>
-          <Highlight
-            imageSrc="/images/black-mesa.jpg"
-            title=""
-            linkText="Learn More"
-            href="/about"
-          >
+      <Hero />
+      <main className={styles.main}>
+        <div className="container">
+          <section className={styles.intro}>
+            <h2 className="serif">Working to make a better tomorrow <em>for all mankind.</em></h2>
             <p>
-              At Black Mesa, we do not ask “why,” but “why not.” Our scientists
-              operate on the edge of known physics — and step over that edge
-              daily. Through partnerships with government agencies and defense
-              contractors, we maintain absolute operational security while
-              delivering results that transform civilization… or redefine it.
+              Pushing the frontiers of quantum mechanics, dimensional field
+              theory, and advanced defense technologies, Black Mesa conducts
+              pioneering research across a broad range of disciplines —
+              including theoretical physics, experimental propulsion systems,
+              robotics, genetics, and applied mathematics.
             </p>
-            <p>
-              Explore how Black Mesa is unlocking new dimensions in
-              teleportation, dark energy extraction, and interspecies
-              observation.
-            </p>
-          </Highlight>
-        </section>
-        <section>
-          <h2 className="minimal-title">Research</h2>
-          <div className="grid">
-            {visiblePosts.map((post) => (
-              <Card
-                key={post.slug}
-                slug={post.slug}
-                title={post.title}
-                excerpt={post.excerpt}
-                image={post.image}
-              />
-            ))}
-          </div>
-          {/* <Link href="/research" className={styles.viewMore}>
+          </section>
+          <section className={styles.highlight}>
+            <Highlight
+              imageSrc="/images/black-mesa.jpg"
+              title=""
+              linkText="About BMRF"
+              href="/about"
+            >
+              <h2 className="minimal-title">Directive</h2>
+              <p>
+                The Black Mesa Research Facility operates beyond the thresholds of established
+                science, pursuing outcomes that challenge foundational
+                assumptions and extend the frontier of applied knowledge.
+                Through strategic alignments with federal entities and select
+                industrial partners, we maintain rigorous experimental
+                governance protocols while advancing initiatives to to reshape
+                infrastructure, policy, and perception.
+              </p>
+            </Highlight>
+          </section>
+          <section>
+            <h2 className="minimal-title">Research</h2>
+            <div className="grid">
+              {visiblePosts.map((post) => (
+                <Card
+                  key={post.slug}
+                  slug={post.slug}
+                  title={post.title}
+                  excerpt={post.excerpt}
+                  image={post.image}
+                />
+              ))}
+            </div>
+            {/* <Link href="/research" className={styles.viewMore}>
             View More
           </Link> */}
-        </section>
-      </div>
-    </main>
+          </section>
+        </div>
+      </main>
     </>
   );
 }

@@ -3,7 +3,7 @@ import { useState } from "react";
 import posts from "@/lib/posts.json";
 import Header from "@/components/Header";
 import Card from "@/components/Post/Card";
-import Button from "@/components/Button"; // ✅ import your generic button
+import Button from "@/components/Button";
 import styles from "./styles.module.scss";
 
 export default function ResearchPage() {
@@ -16,7 +16,9 @@ export default function ResearchPage() {
     <main>
       <Header title="Research" backgroundImage="/images/1.jpg" />
       <div className="container">
+       
         <section>
+          <h2 className="minimal-title">Articles</h2>
           <div className="grid">
             {visiblePosts.map((post) => (
               <Card

@@ -8,16 +8,24 @@ body {
   margin: 0;
 }
 
+.serif {
+  font-family: var(--font-source-serif);
+}
+
 p {
   color:var(--text-secondary);
+  margin-bottom:1rem;
 }
 
 section {
-  padding:4rem 0px;
+  padding-bottom:4rem;
+  &:first-of-type {
+    padding-top: 4rem;
+  }
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -27,6 +35,18 @@ section {
   margin:0 auto;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+}
+
+.flexGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.flexGrid > * {
+  flex: 1 1 280px;
+  max-width: 100%;
 }
 
 .minimal-title {

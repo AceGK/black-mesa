@@ -7,19 +7,25 @@
     text-align:center;
     gap:2rem;
     padding:0px 0px;
-    top:-175px;
+    top:-185px;
     margin-bottom: -50px;
     position:relative;
     z-index: 2;
     h2 {
       font-size:clamp(1.5rem, 8vw, 3.5rem);
-      line-height: normal; 
+      font-weight:500;
+      line-height: 125%;
+      em {
+        color:var(--accent);
+      }
     }
     p {
-      text-wrap:balance;
+      font-size:1.125rem;
+      text-wrap:pretty;
+      max-width:800px;
     }
   }
   .highlight {
-    padding:0px 0px!important;
+    padding:0px 0px 8rem 0px!important;
   }
 }

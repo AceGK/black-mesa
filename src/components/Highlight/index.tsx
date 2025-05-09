@@ -5,8 +5,8 @@ import styles from "./styles.module.scss";
 interface HighlightProps {
   imageSrc: string;
   title: string;
-  linkText: string;
-  href: string;
+  linkText?: string;
+  href?: string;
   children?: React.ReactNode;
 }
 
@@ -27,18 +27,15 @@ export default function Highlight({
       <div className={styles.content}>
         <h2>{title}</h2>
         <div className={styles.description}>{children}</div>
-        <Link href={href} className={styles.button}>
-          {linkText}
-        </Link>
+        {href && linkText && (
+          <Link href={href} className={styles.button}>
+            {linkText}
+          </Link>
+        )}
       </div>
 
       <div className={styles.imageWrapper}>
-        <Image
-          src={imageSrc}
-          alt={title}
-          fill
-          className={styles.image}
-        />
+        <Image src={imageSrc} alt={title} fill className={styles.image} />
       </div>
     </div>
   );
