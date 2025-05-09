@@ -6,13 +6,12 @@ import Lambda from "@/assets/icons/lambda.svg";
 import Circuit from "@/assets/icons/circuit.svg";
 import Atom from "@/assets/icons/atom.svg";
 import Radiation from "@/assets/icons/radiation.svg";
-import Gear from "@/assets/icons/gear.svg";
 import Simulation from "@/assets/icons/simulation.svg";
 
 export default function About() {
   return (
     <main>
-      <Header title="about" backgroundImage="/images/1.jpg" />
+      <Header title="about" backgroundImage="/images/3.jpg" />
       <div className="container">
         <section>
           <Highlight imageSrc="/images/black-mesa.jpg" title="Black Mesa">
