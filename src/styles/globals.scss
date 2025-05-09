@@ -58,6 +58,11 @@ section {
   letter-spacing: 0.1em;
 }
 
+[data-theme="light"] .minimal-title {
+  color: var(--text);
+  font-weight:700;
+}
+
 .underline-animate {
   display: inline;
   text-decoration: none;

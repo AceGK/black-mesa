@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-light);
+  color: var(--text);
   text-align: center;
   overflow: hidden;
 
@@ -27,7 +27,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85));
+    background: var(--overlay-gradient);
     z-index: 2;
   }
 }

@@ -7,30 +7,13 @@
   gap: 2rem;
   background: var(--bg);
   color: var(--text);
-  // border-radius: 0.5rem;
-  overflow: hidden;
+  overflow: visible;
   text-align: left;
 
   @include respond-md {
     flex-direction: column;
     text-align: center;
   }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   width: 120px;
-  //   height: 120px;
-  //   background-image: url("/images/1.jpg");
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   opacity: 1;
-  //   pointer-events: none;
-  //   z-index: 0;
-  // }
 }
 
 .imageWrapper {
@@ -78,17 +61,8 @@
 
 .button {
   align-self: flex-start;
-  background: var(--accent);
-  color: var(--text-dark, black);
-  padding: 0.5em 1.2em;
-  font-weight: 600;
-  border-radius: 3px;
   text-decoration: none;
-  transition: background 0.2s ease;
-
-  &:hover {
-    background: var(--accent-hover);
-  }
+  padding: .5em 1.2em;
 
   @include respond-md {
     align-self: center;
@@ -99,18 +73,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 120px;
-  height: 120px;
+  width: 400px;
+  height: 400px;
   transform: translate(-50%, -50%);
   z-index: 0;
-  opacity: 0.1;
+  opacity: 0.03;
   pointer-events: none;
-
   @include respond-md {
     display: none;
   }
-}
-
-.bgImageInner {
-  object-fit: contain;
 }

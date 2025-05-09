@@ -9,6 +9,7 @@ import LogoIcon from "@/assets/logos/black-mesa-icon.svg";
 import ThemeToggle from "@/components/ThemeToggle";
 import MenuIcon from "@/assets/icons/hamburger-right.svg";
 import { usePathname } from "next/navigation";
+import Button from "@/components/Button";
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,9 +66,9 @@ export default function Nav() {
                 {label}
               </Link>
             ))}
-            <Link href="/contact" className={styles.button}>
+            <Button href="/contact" className={styles.button}>
               Contact
-            </Link>
+            </Button>
             <ThemeToggle />
           </div>
           <button

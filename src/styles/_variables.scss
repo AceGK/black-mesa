@@ -8,6 +8,8 @@ $text-light: #141414;
 $text-dark: #efebe3;
 $border-light: rgba(0, 0, 0, 0.1);
 $border-dark: rgba(255, 255, 255, 0.1);
+$overlay-gradient-light: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.85));
+$overlay-gradient-dark: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85));;
 
 // Global CSS variables
 :root {
@@ -19,6 +21,7 @@ $border-dark: rgba(255, 255, 255, 0.1);
   --accent: #{$accent};
   --accent-hover: #{$accent-hover};
   --border:#{$border-light};
+  --overlay-gradient: #{$overlay-gradient-light};
 }
 
 [data-theme="dark"] {
@@ -30,4 +33,5 @@ $border-dark: rgba(255, 255, 255, 0.1);
   --accent: #{$accent};
   --accent-hover: #{$accent-hover};
   --border:#{$border-dark};
+  --overlay-gradient: #{$overlay-gradient-dark};
 }

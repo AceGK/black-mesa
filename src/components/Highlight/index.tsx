@@ -1,6 +1,8 @@
+'use client'
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./styles.module.scss";
+import Logo from "@/assets/logos/black-mesa-icon.svg";
+import Button from "@/components/Button";
 
 interface HighlightProps {
   imageSrc: string;
@@ -8,6 +10,7 @@ interface HighlightProps {
   linkText?: string;
   href?: string;
   children?: React.ReactNode;
+  showLogo?: boolean; 
 }
 
 export default function Highlight({
@@ -16,21 +19,23 @@ export default function Highlight({
   linkText,
   href,
   children,
+  showLogo = false, 
 }: HighlightProps) {
   return (
     <div className={styles.highlight}>
-      {/* Optional background logo */}
-      {/* <div className={styles.bgImage}>
-        <Logo />
-      </div> */}
+      {showLogo && (
+        <div className={styles.bgImage}>
+          <Logo />
+        </div>
+      )}
 
       <div className={styles.content}>
         <h2>{title}</h2>
         <div className={styles.description}>{children}</div>
         {href && linkText && (
-          <Link href={href} className={styles.button}>
+          <Button href={href} className={styles.button}>
             {linkText}
-          </Link>
+          </Button>
         )}
       </div>
 

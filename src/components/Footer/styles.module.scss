@@ -29,6 +29,11 @@
     color: var(--text2);
     text-transform: uppercase;
     width: fit-content;
+    &:hover {
+      [data-theme="light"] & {
+        color: var(--text-dark);
+      }
+    }
   }
 
   &:last-of-type {

@@ -25,10 +25,11 @@ export default function Home() {
           </section>
           <section className={styles.highlight}>
             <Highlight
-              imageSrc="/images/black-mesa.jpg"
+              imageSrc="/images/1.jpg"
               title=""
               linkText="About BMRF"
               href="/about"
+              showLogo
             >
               <h2 className="minimal-title">Directive</h2>
               <p>

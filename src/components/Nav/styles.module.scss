@@ -71,17 +71,16 @@
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.1em;
+      [data-theme="light"] & {
+        color: var(--text-dark);
+      }
     }
 
     .button {
-      background: var(--accent);
       color: var(--text-dark);
       padding: 0.5em 1.2em;
-      border-radius: 3px;
       font-weight: 600;
-
       &:hover {
-        background: var(--accent-hover);
         text-decoration: none;
       }
     }
