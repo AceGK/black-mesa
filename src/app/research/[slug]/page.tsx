@@ -32,6 +32,7 @@ export default async function NewsPostPage({
       date={post.date}
       content={post.content}
       image={post.image}
+      slug={post.slug}
     />
   );
 }

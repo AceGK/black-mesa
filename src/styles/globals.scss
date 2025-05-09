@@ -63,6 +63,10 @@ section {
   font-weight:700;
 }
 
+.divider {
+  border-top: 1px solid var(--border);
+}
+
 .underline-animate {
   display: inline;
   text-decoration: none;
