@@ -1,3 +1,5 @@
+@use "@/styles/mixins" as *;
+
 .header {
   position: relative;
   width: 100%;
@@ -9,6 +11,11 @@
   color: var(--text);
   text-align: center;
   overflow: hidden;
+  margin-top:75px;
+
+  @include respond-md  {
+    margin-top:50.99px;
+  }
 
   h1 {
     z-index: 2;

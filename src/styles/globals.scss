@@ -56,6 +56,10 @@ section {
   text-transform: uppercase;
   padding-bottom:1rem;
   letter-spacing: 0.1em;
+  &.dark {
+    color: var(--text-dark);
+    font-weight:600!important;
+  }
 }
 
 [data-theme="light"] .minimal-title {

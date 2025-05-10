@@ -4,7 +4,7 @@ export default function About() {
 
   return (
     <main>
-      <Header title="careers" backgroundImage="/images/1.jpg" />
+      <Header title="careers" backgroundImage="/images/3.jpg" />
 
     </main>
   );

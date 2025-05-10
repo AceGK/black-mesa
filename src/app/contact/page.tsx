@@ -4,7 +4,7 @@ export default function About() {
 
   return (
     <main>
-      <Header title="contact" backgroundImage="/images/1.jpg" />
+      <Header title="contact" backgroundImage="/images/7.jpg" />
 
     </main>
   );

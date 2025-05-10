@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
 import posts from "@/lib/posts.json";
 import Card from "@/components/Post/Card";
-// import Link from "next/link";
+// import ApplyFooter from "@/components/ApplyFooter";
 
 export default function Home() {
   const visiblePosts = posts.slice(0, 3);
@@ -31,7 +31,7 @@ export default function Home() {
               href="/about"
               showLogo
             >
-              <h2 className="minimal-title">Directive</h2>
+              <h2 className="minimal-title">company</h2>
               <p>
                 The Black Mesa Research Facility operates beyond the thresholds of established
                 science, pursuing outcomes that challenge foundational
@@ -43,7 +43,7 @@ export default function Home() {
               </p>
             </Highlight>
           </section>
-          <section>
+          <section style={{ marginBottom: "8rem" }}>
             <h2 className="minimal-title">Research</h2>
             <div className="grid">
               {visiblePosts.map((post) => (
@@ -56,11 +56,9 @@ export default function Home() {
                 />
               ))}
             </div>
-            {/* <Link href="/research" className={styles.viewMore}>
-            View More
-          </Link> */}
           </section>
         </div>
+        {/* <ApplyFooter /> */}
       </main>
     </>
   );

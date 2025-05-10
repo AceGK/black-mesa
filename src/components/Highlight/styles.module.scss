@@ -12,14 +12,13 @@
 
   @include respond-md {
     flex-direction: column;
-    text-align: center;
   }
 }
 
 .imageWrapper {
   position: relative;
   flex: 1 1 0;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
   min-height: 100%;
   order: 2;
 

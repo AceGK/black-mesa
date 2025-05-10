@@ -1,4 +1,4 @@
-@use "@/styles/mixins" as *; // optional
+@use "@/styles/mixins" as *;
 
 .button {
   display: inline-flex;
@@ -11,6 +11,7 @@
   cursor: pointer;
   border: 2px solid transparent;
   line-height: normal;
+  text-decoration: none;
 
   &.default {
     background: var(--accent);

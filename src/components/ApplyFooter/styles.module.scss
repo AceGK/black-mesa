@@ -1,0 +1,47 @@
+.contact {
+  position: relative;
+  background:#ebebeb;
+  color:var(--text-dark);
+  overflow: hidden;
+
+  .content {
+    padding-bottom:0px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height:normal;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    color:var(--text-dark);
+    opacity:0.8;
+    max-width: 450px;
+    text-wrap:balance;
+    margin-bottom:10px;
+  }
+
+  a {
+    color: var(--accent);
+  }
+  
+  a:visited {
+    color: var(--text-dark);
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    .image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

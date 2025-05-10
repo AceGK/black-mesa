@@ -11,7 +11,7 @@ import Simulation from "@/assets/icons/simulation.svg";
 export default function About() {
   return (
     <main>
-      <Header title="about" backgroundImage="/images/3.jpg" />
+      <Header title="about" backgroundImage="/images/black-mesa-sign.jpg" />
       <div className="container">
         <section>
           <Highlight imageSrc="/images/black-mesa.jpg" title="Black Mesa">
