@@ -16,10 +16,23 @@ export default function ThemeToggle() {
 
   const isDark = resolvedTheme === "dark";
 
+  const handleThemeToggle = () => {
+    // Disable transitions
+    document.body.classList.add("no-theme-transition");
+
+    // Toggle theme
+    setTheme(isDark ? "light" : "dark");
+
+    // Remove class on next frame to restore transitions
+    requestAnimationFrame(() => {
+      document.body.classList.remove("no-theme-transition");
+    });
+  };
+
   return (
     <button
       className={styles.toggle}
-      onClick={() => setTheme(isDark ? "light" : "dark")}
+      onClick={handleThemeToggle}
       aria-label="Toggle Theme"
     >
       {!mounted ? (

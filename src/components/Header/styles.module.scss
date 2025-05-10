@@ -11,17 +11,20 @@
   color: var(--text);
   text-align: center;
   overflow: hidden;
-  margin-top:75px;
+  // margin-top:75px;
 
   @include respond-md  {
-    margin-top:50.99px;
+    // margin-top:50.99px;
   }
 
   h1 {
     z-index: 2;
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(2rem, 6vw, 3rem);
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: clamp(0px, 2rem, 10px);
+    // @include respond-md  {
+    //   letter-spacing: 5px;
+    // }
   }
 }
 
@@ -41,5 +44,6 @@
 
 .image {
   object-fit: cover;
+  // object-position: center 35%;
   z-index: 1;
 }

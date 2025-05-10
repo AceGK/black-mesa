@@ -1,18 +1,21 @@
 @use "@/styles/mixins" as *;
 
+$text-transition: color 0s ease;
+$background-transition: background 1s ease;
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  gap:4rem;
+  gap: 4rem;
   background: var(--bg);
   color: var(--text);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, $background-transition;
 
   @include respond-md {
     padding: 0.5em 1em;
@@ -30,8 +33,9 @@
 
   .logo {
     svg {
-      color:var(--text);
-      width:100%;
+      color: var(--text);
+      width: 100%;
+      transition:$text-transition;
     }
     &:hover {
       svg {
@@ -52,7 +56,7 @@
       max-width: 200px;
       width: 100%;
       height: auto;
-    
+
       @include respond-md {
         display: none;
         width: 0;
@@ -68,7 +72,7 @@
     a {
       color: var(--text);
       text-decoration: none;
-      font-weight: 400;
+      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       [data-theme="light"] & {
@@ -90,26 +94,117 @@
     }
   }
 
-  .menuButton {
-    color: var(--text);
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 35px;
-    width: 35px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding:0px;
+}
 
-    svg {
-      color: var(--text);
-      width: 100%;
-      height: 100%;
+.solid {
+  background: var(--bg);
+}
+
+.transparent {
+  background: transparent;
+  // transition: transform 0.3s ease, opacity 0.3s ease, $background-transition;
+  &[data-home="true"] {
+    a, svg {
+      color: var(--text-dark);
+      // transition: $text-transition;
+    }
+    .hamburger span {
+      background: var(--text-dark);
+    }
+    &.menuOpen {
+      .hamburger span {
+        background: var((--text));
+      }
+    }
+  }
+}
+
+// menu button 
+.menuButton {
+  display: none;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  @include respond-md {
+    display: flex;
+  }
+}
+
+.menuIcon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .menuCheckbox {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    inset: 0;
+    margin: auto;
+    width: 22px;
+    height: 12px;
+    z-index: 1;
+  }
+
+  span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text);
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    transform-origin: center;
+
+    &:first-of-type {
+      top: 0;
     }
 
-    @include respond-md {
-      display: flex;
+    &:last-of-type {
+      bottom: 0;
+      width:14px;
+    }
+  }
+
+  .menuCheckbox:checked + div {
+    span:first-of-type {
+      transform: rotate(-45deg);
+      top: 5px;
+    }
+
+    span:last-of-type {
+      transform: rotate(45deg);
+      bottom: 5px;
+      width:22px;
+    }
+  }
+
+  &:hover {
+    span {
+      background-color: var(--accent)!important;
+    }
+  }
+}
+
+.menuOpen {
+  .logo svg {
+    color: var(--text);
+    &:hover {
+      color: var(--accent);
+    }
+  }
+  .menuIcon span {
+    background: var(--text);
+    &:hover {
+      background: var(--accent);
     }
   }
 }

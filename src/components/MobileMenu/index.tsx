@@ -11,9 +11,6 @@ export default function MobileMenu({
 }) {
   return (
     <div className={`${styles.mobileMenu} ${open ? styles.show : ""}`}>
-      <button className={styles.closeButton} onClick={onClose} aria-label="Close menu">
-        ✕
-      </button>
       <nav>
         <Link href="/about" onClick={onClose}>About</Link>
         <Link href="/research" onClick={onClose}>Research</Link>

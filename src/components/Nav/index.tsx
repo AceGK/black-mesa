@@ -7,30 +7,66 @@ import MobileMenu from "../MobileMenu";
 import LogoFull from "@/assets/logos/black-mesa.svg";
 import LogoIcon from "@/assets/logos/black-mesa-icon.svg";
 import ThemeToggle from "@/components/ThemeToggle";
-import MenuIcon from "@/assets/icons/hamburger-right.svg";
 import { usePathname } from "next/navigation";
 import Button from "@/components/Button";
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollUp, setScrollUp] = useState(true);
-  const [scrolledPastThreshold, setScrolledPastThreshold] = useState(false);
+  const [showBackground, setShowBackground] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const pathname = usePathname();
 
+  // handle scroll events to show/hide the header and change background color
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const threshold = window.innerHeight * 0.25;
 
       setScrollUp(currentScrollY < lastScrollY || currentScrollY < threshold);
-      setScrolledPastThreshold(currentScrollY > threshold);
+      setShowBackground(currentScrollY > threshold + 100);
       setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
+
+  // Close the menu when the screen is resized to a larger size
+  useEffect(() => {
+    const handleResize = () => {
+      const breakpoint = 768;
+      if (window.innerWidth >= breakpoint && menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+  
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [menuOpen]);
+
+  // Close the menu when a link is clicked
+  const handleMenuToggle = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  // prevent body scroll when menu is open, set scrollbar gutter to stable
+  useEffect(() => {
+    const body = document.body;
+    const html = document.documentElement;
+    if (menuOpen) {
+      html.classList.add("scrollbar-stable");
+      body.classList.add("no-scroll");
+    } else {
+      html.classList.remove("scrollbar-stable");
+      body.classList.remove("no-scroll");
+    }
+  
+    return () => {
+      html.classList.remove("scrollbar-stable");
+      body.classList.remove("no-scroll");
+    };
+  }, [menuOpen]);
 
   const links = [
     { href: "/about", label: "About" },
@@ -41,9 +77,13 @@ export default function Nav() {
   return (
     <>
       <header
-        className={`${styles.nav} ${
-          scrolledPastThreshold ? styles.solid : styles.transparent
-        } ${scrollUp ? styles.show : styles.hide}`}
+        data-home={pathname === "/" ? "true" : "false"}
+        className={`
+          ${styles.nav} 
+          ${showBackground ? styles.solid : styles.transparent} 
+          ${scrollUp || menuOpen ? styles.show : styles.hide}
+          ${menuOpen ? styles.menuOpen : ""}
+        `}
       >
         <div className={styles.logo}>
           <Link href="/" className={styles.logoIcon}>
@@ -71,13 +111,21 @@ export default function Nav() {
             </Button>
             <ThemeToggle />
           </div>
-          <button
-            className={styles.menuButton}
-            onClick={() => setMenuOpen(true)}
-            aria-label="Open menu"
-          >
-            <MenuIcon />
-          </button>
+          <div className={styles.menuButton}>
+            <label className={styles.menuIcon}>
+              <input
+                type="checkbox"
+                className={styles.menuCheckbox}
+                checked={menuOpen}
+                  onChange={handleMenuToggle}
+                aria-label="Open menu"
+              />
+              <div className={styles.hamburger}>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+          </div>
         </nav>
       </header>
 
