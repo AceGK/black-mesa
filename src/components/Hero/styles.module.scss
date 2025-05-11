@@ -4,7 +4,6 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
   padding: 2rem 0;
 
   @include respond-md {
@@ -16,6 +15,7 @@
 .imageWrapper {
   position: absolute;
   inset: 0;
+  overflow: hidden;
   z-index: 0;
 }
 
