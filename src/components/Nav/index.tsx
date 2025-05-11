@@ -90,7 +90,7 @@ export default function Nav() {
           <Link href="/" className={styles.logoIcon} aria-label="Home">
             <LogoIcon />
           </Link>
-          <Link href="/" className={styles.logoFull}>
+          <Link href="/" className={styles.logoFull} aria-label="Home">
             <LogoFull />
           </Link>
         </div>
