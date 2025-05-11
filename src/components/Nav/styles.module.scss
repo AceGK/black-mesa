@@ -13,7 +13,7 @@ $background-transition: background 1s ease;
   width: 100%;
   top: 0;
   z-index: 1000;
-  transition: transform 0.3s ease, opacity 0.3s ease, $background-transition;
+  transition: transform 0.3s ease, opacity 0.3s ease, $background-transition, backdrop-filter 0s ease;
 
   @include respond-md {
     padding: 0.5em 1em;
