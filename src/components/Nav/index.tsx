@@ -87,7 +87,7 @@ export default function Nav() {
         `}
       >
         <div className={styles.logo}>
-          <Link href="/" className={styles.logoIcon}>
+          <Link href="/" className={styles.logoIcon} aria-label="Home">
             <LogoIcon />
           </Link>
           <Link href="/" className={styles.logoFull}>

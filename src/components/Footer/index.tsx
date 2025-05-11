@@ -21,7 +21,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <Link href="/" className={styles.logo}>
+          <Link href="/" className={styles.logo} aria-label="Home">
             <Logo />
           </Link>
 
