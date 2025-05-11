@@ -95,9 +95,10 @@ $background-transition: background 1s ease;
 }
 
 .solid {
-  background: var(--bg-transparent);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: var(--bg);
+  // background: var(--bg-transparent);
+  // backdrop-filter: blur(5px);
+  // -webkit-backdrop-filter: blur(5px);
 }
 
 .transparent {
