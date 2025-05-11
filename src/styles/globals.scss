@@ -36,6 +36,12 @@ section {
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  @include respond-md {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  @include respond-sm {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 .flexGrid {
