@@ -15,14 +15,16 @@
 .imageWrapper {
   position: absolute;
   inset: 0;
-  overflow: hidden;
+  // overflow: hidden;
   z-index: 0;
+  will-change: transform;
 }
 
 .image {
   object-fit: cover;
   object-position: center 20%;
   z-index: 0;
+  transition: none;
 }
 
 .gradientFade {
