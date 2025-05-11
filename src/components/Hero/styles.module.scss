@@ -4,14 +4,25 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url("/images/black-mesa-new-mexico-contrast.jpg");
-  background-size: cover;
-  background-position: center 20%;
-  padding:2rem 0rem;
+  overflow: hidden;
+  padding: 2rem 0;
+
   @include respond-md {
     min-height: 90svh;
     height: auto;
   }
+}
+
+.imageWrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center 20%;
+  z-index: 0;
 }
 
 .gradientFade {
