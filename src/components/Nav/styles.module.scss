@@ -1,6 +1,5 @@
 @use "@/styles/mixins" as *;
 
-$text-transition: color 0s ease;
 $background-transition: background 1s ease;
 
 .nav {
@@ -9,7 +8,6 @@ $background-transition: background 1s ease;
   align-items: center;
   padding: 1em 2em;
   gap: 4rem;
-  background: var(--bg);
   color: var(--text);
   position: fixed;
   width: 100%;
@@ -35,11 +33,12 @@ $background-transition: background 1s ease;
     svg {
       color: var(--text);
       width: 100%;
-      transition:$text-transition;
     }
-    &:hover {
-      svg {
-        color: var(--accent);
+    @media (hover: hover) {
+      &:hover {
+        svg {
+          color: var(--accent);
+        }
       }
     }
     .logoIcon {
@@ -93,20 +92,21 @@ $background-transition: background 1s ease;
       display: none;
     }
   }
-
 }
 
 .solid {
-  background: var(--bg);
+  background: var(--bg-transparent);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .transparent {
   background: transparent;
   // transition: transform 0.3s ease, opacity 0.3s ease, $background-transition;
   &[data-home="true"] {
-    a, svg {
+    a,
+    svg {
       color: var(--text-dark);
-      // transition: $text-transition;
     }
     .hamburger span {
       background: var(--text-dark);
@@ -119,7 +119,7 @@ $background-transition: background 1s ease;
   }
 }
 
-// menu button 
+// menu button
 .menuButton {
   display: none;
   position: relative;
@@ -170,7 +170,7 @@ $background-transition: background 1s ease;
 
     &:last-of-type {
       bottom: 0;
-      width:14px;
+      width: 14px;
     }
   }
 
@@ -183,13 +183,14 @@ $background-transition: background 1s ease;
     span:last-of-type {
       transform: rotate(45deg);
       bottom: 5px;
-      width:22px;
+      width: 22px;
     }
   }
-
-  &:hover {
-    span {
-      background-color: var(--accent)!important;
+  @media (hover: hover) {
+    &:hover {
+      span {
+        background-color: var(--accent) !important;
+      }
     }
   }
 }
@@ -197,14 +198,18 @@ $background-transition: background 1s ease;
 .menuOpen {
   .logo svg {
     color: var(--text);
-    &:hover {
-      color: var(--accent);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--accent);
+      }
     }
   }
   .menuIcon span {
     background: var(--text);
-    &:hover {
-      background: var(--accent);
+    @media (hover: hover) {
+      &:hover {
+        background: var(--accent);
+      }
     }
   }
 }

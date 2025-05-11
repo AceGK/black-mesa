@@ -6,7 +6,7 @@ body {
   color: var(--text);
   font-family: var(--font-source-sans), sans-serif;
   margin: 0;
-  scrollbar-gutter:stable!important;
+  scrollbar-gutter: stable !important;
 }
 
 .serif {
@@ -14,12 +14,12 @@ body {
 }
 
 p {
-  color:var(--text-secondary);
-  margin-bottom:1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
 }
 
 section {
-  padding-bottom:4rem;
+  padding-bottom: 4rem;
   &:first-of-type {
     padding-top: 4rem;
   }
@@ -33,7 +33,7 @@ section {
 
 .grid {
   display: grid;
-  margin:0 auto;
+  margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
@@ -55,17 +55,17 @@ section {
   font-weight: 600;
   color: var(--accent);
   text-transform: uppercase;
-  padding-bottom:1rem;
+  padding-bottom: 1rem;
   letter-spacing: 0.1em;
   &.dark {
     color: var(--text-dark);
-    font-weight:600!important;
+    font-weight: 600 !important;
   }
 }
 
 [data-theme="light"] .minimal-title {
   color: var(--text);
-  font-weight:700;
+  font-weight: 700;
 }
 
 .divider {
@@ -87,30 +87,46 @@ section {
     color: var(--accent);
   }
 
-  &:hover,
   &:focus-visible,
   &.active {
     background-size: 100% 2px;
     color: var(--accent);
   }
 
+  @media (hover: hover) {
+    &:hover {
+      background-size: 100% 2px;
+      color: var(--accent);
+    }
+  }
+
   &.thin {
     background-size: 0% 1px;
 
-    &:hover,
     &:focus-visible {
       background-size: 100% 1px;
       color: var(--accent);
+    }
+    @media (hover: hover) {
+      &:hover {
+        background-size: 100% 1px;
+        color: var(--accent);
+      }
     }
   }
 
   &.fast {
     transition: background-size 0.25s;
 
-    &:hover,
     &:focus-visible {
       background-size: 100% 2px;
       color: var(--accent);
+    }
+    @media (hover: hover) {
+      &:hover {
+        background-size: 100% 2px;
+        color: var(--accent);
+      }
     }
   }
 }
@@ -128,6 +144,6 @@ section {
   overscroll-behavior: none; // prevents scrolling parent containers
 }
 
-.scrollbar-stable{
+.scrollbar-stable {
   scrollbar-gutter: stable;
 }

@@ -21,10 +21,11 @@ export default function Nav() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      const threshold = window.innerHeight * 0.25;
+      const scrollThreshold = window.innerHeight * 0.1;
+      const backgroundThreshold = window.innerHeight * 0.3;
 
-      setScrollUp(currentScrollY < lastScrollY || currentScrollY < threshold);
-      setShowBackground(currentScrollY > threshold + 100);
+      setScrollUp(currentScrollY < lastScrollY || currentScrollY < scrollThreshold);
+      setShowBackground(currentScrollY > backgroundThreshold);
       setLastScrollY(currentScrollY);
     };
 

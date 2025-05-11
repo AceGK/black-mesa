@@ -14,6 +14,7 @@ $overlay-gradient-dark: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 
 // Global CSS variables
 :root {
   --bg: #{$bg-light};
+  --bg-transparent: #{rgba($bg-light, 0.9)};
   --text: #{$text-light};
   --text-dark:#{$text-light};
   --text-light:#{$text-dark};
@@ -26,6 +27,7 @@ $overlay-gradient-dark: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 
 
 [data-theme="dark"] {
   --bg: #{$bg-dark};
+  --bg-transparent: #{rgba($bg-dark, 0.9)};
   --text: #{$text-dark};
   --text-dark:#{$text-light};
   --text-light:#{$text-dark};
