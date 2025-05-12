@@ -26,7 +26,7 @@ export default function Careers() {
           </div>
           <div>
             <p>
-            If you're motivated by scientific discovery, technical excellence, and the pursuit of meaningful innovation, we invite you to explore our current opportunities at Black Mesa.
+            If you&apos;re motivated by scientific discovery, technical excellence, and the pursuit of meaningful innovation, we invite you to explore our current opportunities at Black Mesa.
             </p>
             <p>
               We are an equal opportunity employer. All qualified applicants
