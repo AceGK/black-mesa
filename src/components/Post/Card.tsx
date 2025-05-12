@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({ slug, title, excerpt, image }) => {
       </div>
       <div className={styles.content}>
         <h3><span className="underline-animate thin">{title}</span></h3>
-        <p>{excerpt}</p>
+        <p className="text-secondary">{excerpt}</p>
       </div>
     </Link>
   );

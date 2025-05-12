@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
 import posts from "@/lib/posts.json";
 import Card from "@/components/Post/Card";
-// import ApplyFooter from "@/components/ApplyFooter";
+import ApplyFooter from "@/components/ApplyFooter";
 
 export default function Home() {
   const visiblePosts = posts.slice(0, 3);
@@ -32,7 +32,7 @@ export default function Home() {
               showLogo
             >
               <h2 className="minimal-title">company</h2>
-              <p>
+              <p className="text-secondary">
                 The Black Mesa Research Facility operates beyond the thresholds of established
                 science, pursuing outcomes that challenge foundational
                 assumptions and extend the frontier of applied knowledge.
@@ -58,7 +58,7 @@ export default function Home() {
             </div>
           </section>
         </div>
-        {/* <ApplyFooter /> */}
+        <ApplyFooter />
       </main>
     </>
   );

@@ -17,7 +17,7 @@ function ApplyFooter() {
       </div>
       <div className={styles.imageWrapper}>
         <Image
-          src="/images/contact-background.jpg"
+          src="/images/building-sign.jpg"
           alt="Contact Us"
           width={1600}
           height={900}

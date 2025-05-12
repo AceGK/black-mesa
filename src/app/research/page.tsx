@@ -16,7 +16,20 @@ export default function ResearchPage() {
     <main>
       <Header title="Research" backgroundImage="/images/1.jpg" />
       <div className="container">
-       
+        <section className={styles.description}>
+          <p>
+            <span className="minimal-title">The Black Mesa Research Facility</span> supports advanced,
+            multidisciplinary programs spanning theoretical physics, materials
+            science, and experimental applications. Our secure divisions operate
+            under strict containment protocols, contributing to federally
+            aligned projects with far-reaching implications.
+          </p>
+          <p>
+            Below is a curated selection of our publicly accessible research
+            initiatives.
+          </p>
+        </section>
+
         <section>
           <h2 className="minimal-title">Articles</h2>
           <div className="grid">

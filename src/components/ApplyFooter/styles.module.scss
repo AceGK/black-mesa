@@ -1,3 +1,5 @@
+@use "@/styles/mixins" as *;
+
 .contact {
   position: relative;
   background:#ebebeb;
@@ -5,11 +7,11 @@
   overflow: hidden;
 
   .content {
-    padding-bottom:0px;
+    padding-bottom:2rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 6vw, 3rem);
     line-height:normal;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -17,16 +19,21 @@
 
   p {
     font-size: 1.125rem;
-    margin-bottom: 1.5rem;
     color:var(--text-dark);
     opacity:0.8;
     max-width: 450px;
     text-wrap:balance;
-    margin-bottom:10px;
+    @include respond-sm {
+      font-size: 1rem;
+    }
+
   }
 
   a {
     color: var(--accent);
+    &:hover {
+      font-weight:600;
+    }
   }
   
   a:visited {
