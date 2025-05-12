@@ -9,7 +9,9 @@ $text-dark: #efebe3;
 $border-light: rgba(0, 0, 0, 0.1);
 $border-dark: rgba(255, 255, 255, 0.1);
 $overlay-gradient-light: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.75));
-$overlay-gradient-dark: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75));;
+$overlay-gradient-dark: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75));
+$box-shadow-light: 0 0 10px rgba(0, 0, 0, 0.05);
+$box-shadow-dark: 0 0 10px rgba(255, 255, 255, 0.05);
 
 // Global CSS variables
 :root {
@@ -23,6 +25,7 @@ $overlay-gradient-dark: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 
   --accent-hover: #{$accent-hover};
   --border:#{$border-light};
   --overlay-gradient: #{$overlay-gradient-light};
+  --box-shadow: #{$box-shadow-light};
 }
 
 [data-theme="dark"] {
@@ -36,4 +39,5 @@ $overlay-gradient-dark: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 
   --accent-hover: #{$accent-hover};
   --border:#{$border-dark};
   --overlay-gradient: #{$overlay-gradient-dark};
+  --box-shadow: #{$box-shadow-dark};
 }

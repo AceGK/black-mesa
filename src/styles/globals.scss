@@ -44,14 +44,14 @@ section {
   }
 }
 
-.flexGrid {
+.flex-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
 
-.flexGrid > * {
+.flex-grid > * {
   flex: 1 1 280px;
   max-width: 100%;
 }

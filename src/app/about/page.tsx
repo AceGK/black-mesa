@@ -45,7 +45,7 @@ export default function About() {
             including:
           </p>
 
-          <div className="flexGrid" style={{ marginTop: "3rem" }}>
+          <div className="flex-grid" style={{ marginTop: "3rem" }}>
             <Blurb
               icon={<Atom />}
               title="Anomalous Materials"

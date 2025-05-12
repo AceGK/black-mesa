@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Research Associate",
+    "slug": "research-associate",
+    "department": "Theoretical Applications Division",
+    "description": "Join a multidisciplinary team focused on pushing the boundaries of applied theoretical physics within a high-security laboratory environment. Responsibilities include formulating hypotheses, executing controlled studies, and contributing to long-range classified projects. Candidates must demonstrate discretion, analytical rigor, and a willingness to operate within restricted-access environments.",
+    "salary": "$125,000 – $155,000 USD",
+    "location": "New Mexico",
+    "benefits": [
+      "Hazard pay eligibility",
+      "Clearance tier advancement opportunities",
+      "Private health and medical services",
+      "Government-subsidized housing assistance",
+      "30 required days of vacation for full-time staff",
+      "Annual off-site research symposium (classified)"
+    ]
+  },
+  {
+    "title": "Systems Analyst",
+    "slug": "systems-analyst",
+    "department": "Operations & Infrastructure Monitoring",
+    "description": "Work at the core of facility-wide systems integration to maintain operational integrity across secure labs. This position oversees telemetry synchronization, anomaly detection protocols, and real-time systems diagnostics. Applicants should have a strong background in systems architecture and the ability to troubleshoot under pressure in sensitive environments.",
+    "salary": "$95,000 – $115,000 USD",
+    "location": "New Mexico",
+    "benefits": [
+      "Comprehensive health coverage",
+      "Annual performance incentives",
+      "Security clearance sponsorship",
+      "On-site dining and recreation access",
+      "Cross-department training eligibility",
+      "30 required days of vacation for full-time staff",
+      "Company-sponsored technical certification programs"
+    ]
+  },
+  {
+    "title": "Containment Systems Engineer",
+    "slug": "containment-systems-engineer",
+    "department": "Engineering & Containment Safety",
+    "description": "Support the structural integrity of critical systems tied to ongoing classified experiments. This role involves high-level diagnostics, structural maintenance of sensitive hardware, and adherence to strict safety containment protocols. Prior experience with fail-safe systems and response procedures in high-risk settings is strongly recommended.",
+    "salary": "$110,000 – $135,000 USD",
+    "location": "New Mexico",
+    "benefits": [
+      "Advanced PPE provided",
+      "Access to classified technical briefings",
+      "Emergency response bonus eligibility",
+      "Opportunities for interdepartmental collaboration",
+      "Retirement matching benefits",
+      "30 required days of vacation for full-time staff",
+      "On-site incident containment simulations"
+    ]
+  },
+  {
+    "title": "Security Officer",
+    "slug": "security-officer",
+    "department": "Internal Security Division",
+    "description": "Ensure operational continuity through protection of personnel, infrastructure, and materials across multiple high-security zones. Tasks include escorting staff, enforcing clearance protocols, and responding to containment breach drills. Candidates with military, defense contracting, or federal security experience will be prioritized.",
+    "salary": "$65,000 – $85,000 USD",
+    "location": "New Mexico",
+    "benefits": [
+      "On-site weapons training",
+      "Enhanced medical coverage",
+      "Facility housing access",
+      "Clearance fast-track eligibility",
+      "Annual hazard duty compensation",
+      "30 required days of vacation for full-time staff",
+      "Quarterly tactical readiness retreats"
+    ]
+  },
+  {
+    "title": "Sanitation Technician",
+    "slug": "sanitation-technician",
+    "department": "Environmental Safety & Response",
+    "description": "Execute site-wide sanitation protocols in controlled research zones with heightened containment requirements. This role demands strict procedural adherence, adaptability in hazardous environments, and close collaboration with emergency response staff. Ideal for candidates with prior decon or industrial sanitation experience.",
+    "salary": "$45,000 – $60,000 USD",
+    "location": "New Mexico",
+    "benefits": [
+      "Specialized gear issued",
+      "Risk mitigation coverage",
+      "Tiered leave scheduling",
+      "Daily health screening access",
+      "Mental wellness program enrollment",
+      "30 required days of vacation for full-time staff",
+      "Annual team safety retreat"
+    ]
+  }
+]

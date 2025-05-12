@@ -1,0 +1,138 @@
+@use "@/styles/mixins" as *;
+
+.inputContainer {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 1;
+
+  label {
+    font-weight: 500;
+    color:var(--text);
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: rgba(0,0,0,0.025);
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text);
+    caret-color: var(--accent);
+    font-size: 1rem;
+    font-family: inherit;
+    position: relative;
+    z-index: 1;
+  }
+
+  input {
+    height: 3rem;
+    padding: 0 1rem;
+  }
+
+  textarea {
+    min-height: 150px;
+    padding: 1.2rem 1rem 1rem; // Top padding makes room for label
+    resize: vertical;
+    line-height: 1.6;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background-color: var(--bg);
+  }
+
+  input.hasValue,
+  textarea.hasValue {
+    background-color: var(--bg);
+  }
+
+  .placeholderText {
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    padding: 0 0.7rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+
+    .text {
+      font-size: 1rem;
+      padding:0rem 0.3rem;
+      color: var(--text2);
+      background-color: transparent;
+      transition: transform 0.15s ease, font-size 0.15s ease,
+      background-color 0s ease, color 0s ease;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  textarea {
+    max-height: 400px;
+  }
+
+  // Position adjustment for textarea
+  textarea + .placeholderText {
+    top: 1rem;
+    transform: none;
+    align-items: flex-start;
+  }
+
+  // Floating label
+  input:focus ~ .placeholderText .text,
+  input.hasValue ~ .placeholderText .text,
+  textarea:focus ~ .placeholderText .text,
+  textarea.hasValue ~ .placeholderText .text {
+    font-size: 0.8125rem;
+    transform: translateY(-1.75em);
+    // padding: 0rem 0.3rem;
+    border-radius: 4px;
+    background-color: var(--bg);
+  }
+
+  textarea:focus ~ .placeholderText .text,
+  textarea.hasValue ~ .placeholderText .text {
+    transform: translateY(-1.9em);
+  }
+
+  // Autocomplete fix
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.3) inset !important;
+    box-shadow: 0 0 0px 1000px var(--clr-1) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white !important;
+  }
+
+  input[type="date"]::-webkit-datetime-edit {
+    opacity: 0;
+  }
+
+  input[type="date"]:focus::-webkit-datetime-edit,
+  input[type="date"]:focus-within::-webkit-datetime-edit,
+  input[type="date"][value]:not([value=""])::-webkit-datetime-edit {
+    opacity: 1;
+  }
+
+  .noTransition {
+    .text {
+      transition: none !important;
+    }
+  }
+}
