@@ -12,7 +12,8 @@
   padding: 2rem 1rem;
   color: var(--text2);
   flex-wrap: wrap;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 1rem;
 
   @include respond-md {
     flex-direction: column;

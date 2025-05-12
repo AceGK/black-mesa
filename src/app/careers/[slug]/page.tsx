@@ -50,7 +50,7 @@ export default function JobPage({ params }: { params: { slug: string } }) {
         ))}
       </ul>
      
-      <Button href="/apply">
+      <Button href="/contact">
       Apply for position
       </Button>
     </main>
