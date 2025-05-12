@@ -18,11 +18,12 @@ export default function ResearchPage() {
       <div className="container">
         <section className={styles.description}>
           <p>
-            <span className="minimal-title">The Black Mesa Research Facility</span> supports advanced,
-            multidisciplinary programs spanning theoretical physics, materials
-            science, and experimental applications. Our secure divisions operate
-            under strict containment protocols, contributing to federally
-            aligned projects with far-reaching implications.
+            <span className="minimal-title">Black Mesa Research Facility</span>{" "}
+            supports advanced, multidisciplinary programs spanning theoretical
+            physics, materials science, and experimental applications. Our
+            secure divisions operate under strict containment protocols,
+            contributing to federally aligned projects with far-reaching
+            implications.
           </p>
           <p>
             Below is a curated selection of our publicly accessible research
