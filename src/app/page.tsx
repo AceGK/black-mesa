@@ -33,7 +33,7 @@ export default function Home() {
             >
               <h2 className="minimal-title">company</h2>
               <p className="text-secondary">
-                The Black Mesa Research Facility operates beyond the thresholds of established
+                Black Mesa Research Facility operates beyond the thresholds of established
                 science, pursuing outcomes that challenge foundational
                 assumptions and extend the frontier of applied knowledge.
                 Through strategic alignments with federal entities and select

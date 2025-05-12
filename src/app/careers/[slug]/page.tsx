@@ -1,11 +1,7 @@
-'use client';
-
-import { notFound } from 'next/navigation';
-import styles from './styles.module.scss';
-import jobs from '@/lib/jobs.json';
-import Button from '@/components/Button';
-// import Link from 'next/link';
-// import ChevronLeft from '@/assets/icons/chevron-left.svg';
+import { notFound } from "next/navigation";
+import styles from "./styles.module.scss";
+import jobs from "@/lib/jobs.json";
+import Button from "@/components/Button";
 
 interface Job {
   title: string;
@@ -16,17 +12,22 @@ interface Job {
   benefits: string[];
 }
 
-export default function JobPage({ params }: { params: { slug: string } }) {
-  const job: Job | undefined = jobs.find((j) => j.slug === params.slug);
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  return jobs.map((job) => ({ slug: job.slug }));
+}
 
+export default async function JobPage({
+params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const job = jobs.find((j: Job) => j.slug === slug);
   if (!job) return notFound();
 
   return (
     <main className={styles.page}>
-      {/* <Link href="/careers" className={styles.backButton}>
-        <ChevronLeft /> <span className="underline-animate">Back</span>
-      </Link> */}
-      
       <h1 className={styles.title}>{job.title}</h1>
 
       <ul className={styles.meta}>
@@ -39,7 +40,7 @@ export default function JobPage({ params }: { params: { slug: string } }) {
           <p>{job.location}</p>
         </li>
       </ul>
-    
+
       <h3 className={styles.subheading}>Description</h3>
       <p className={styles.description}>{job.description}</p>
 
@@ -49,10 +50,8 @@ export default function JobPage({ params }: { params: { slug: string } }) {
           <li key={index}>{benefit}</li>
         ))}
       </ul>
-     
-      <Button href="/contact">
-      Apply for position
-      </Button>
+
+      <Button href="/contact">Apply for position</Button>
     </main>
   );
 }
